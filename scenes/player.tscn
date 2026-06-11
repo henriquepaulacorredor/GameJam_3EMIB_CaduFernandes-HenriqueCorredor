@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cxeoy3txfdwge"]
+
+[ext_resource type="Script" uid="uid://dykbbw4d0ah6o" path="res://scripts/player.gd" id="1_hqtel"]
+[ext_resource type="Texture2D" uid="uid://25ku78u54xdr" path="res://assets/Personagens/Walk-1.png.png" id="1_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://dnj32yxrqhpsy" path="res://assets/Personagens/Walk-2.png.png" id="2_hqtel"]
+[ext_resource type="Texture2D" uid="uid://mr5rwcwatc5c" path="res://assets/Personagens/Idle-1.png.png" id="2_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://d3jildvl0tvbh" path="res://assets/Personagens/Idle-2.png.png" id="3_fjrip"]
+[ext_resource type="Texture2D" uid="uid://dfic1bq3qo4hc" path="res://assets/Personagens/Walk-3.png.png" id="3_sweqy"]
+[ext_resource type="Texture2D" uid="uid://cdex7eccp1h8q" path="res://assets/Personagens/Jump-1.png.png" id="4_fjrip"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2hs0m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tuyoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fjrip")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_fjrip")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_i3pqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hqtel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sweqy")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1jxqw"]
+size = Vector2(76, 89)
+
+[node name="Player" type="CharacterBody2D" unique_id=1724235791]
+script = ExtResource("1_hqtel")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1525272906]
+sprite_frames = SubResource("SpriteFrames_2hs0m")
+animation = &"idle"
+
+[node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=137637086]
+zoom = Vector2(0.95, 0.95)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1891044449]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_1jxqw")
