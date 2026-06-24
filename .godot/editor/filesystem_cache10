@@ -1,31 +1,71 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1781138269
-::res://assets/::1781132964
-::res://assets/kenney_voxel-pack/::1781132744
-::res://assets/kenney_voxel-pack/Spritesheets/::1781132786
-spritesheet_characters.xml::TextFile::-1::1781132744::0::1::::<><><>0<>0<><>::
-spritesheet_items.png::CompressedTexture2D::6006433385020227180::1781132744::1781132786::1::::<><><>0<>0<>9900424d7a536eccb062c9aa2e0d67cb<>res://.godot/imported/spritesheet_items.png-9ce0a794b9f083536cf5779b54f9bf0b.ctex::
-spritesheet_items.xml::TextFile::-1::1781132744::0::1::::<><><>0<>0<><>::
-spritesheet_particles.png::CompressedTexture2D::7522834571753384128::1781132744::1781132786::1::::<><><>0<>0<>442766d66fa3bc0b0d92e9cf7eeb7eb4<>res://.godot/imported/spritesheet_particles.png-23b4b1f774cf5183935acb2015e35dc1.ctex::
-spritesheet_particles.xml::TextFile::-1::1781132744::0::1::::<><><>0<>0<><>::
-spritesheet_tiles.png::CompressedTexture2D::6571495616856837646::1781132744::1781132786::1::::<><><>0<>0<>f54c1af08f65eab28c37ecd83e3db571<>res://.godot/imported/spritesheet_tiles.png-52024c1b276a1b8b0abc07bebdd6ccc6.ctex::
-spritesheet_tiles.xml::TextFile::-1::1781132744::0::1::::<><><>0<>0<><>::
-::res://assets/kenney_voxel-pack/Vector/::1781132786
-vector_characters.svg::CompressedTexture2D::1812026939863225180::1781132744::1781132786::1::::<><><>0<>0<>8cc4fa0076cd38b9a70493a4c6fbeead<>res://.godot/imported/vector_characters.svg-1abf497ed615fab36e814d8f34cabb2b.ctex::
-vector_other.svg::CompressedTexture2D::9194852061025257208::1781132744::1781132786::1::::<><><>0<>0<>28b3794830ee7b96b61ed876466c2c47<>res://.godot/imported/vector_other.svg-fb87a7bc51933c7ad4029a1953108894.ctex::
-vector_tiles_items.svg::CompressedTexture2D::1307672893211383507::1781132744::1781132786::1::::<><><>0<>0<>998cbd5c7696bc990388d7322b1b2629<>res://.godot/imported/vector_tiles_items.svg-62cc59155a08c4139e4a8a39255e31d9.ctex::
-::res://assets/Personagens/::1781138716
-Idle-1.png.png::CompressedTexture2D::879213573358423390::1781138656::1781138657::1::::<><><>0<>0<>8c39df77cce76117966bbbe20f1a0178<>res://.godot/imported/Idle-1.png.png-8bed4b92a841d79d3ec5bbdddc94c91d.ctex::
-Idle-2.png.png::CompressedTexture2D::9143634642950745797::1781138645::1781138657::1::::<><><>0<>0<>3b034cdcc38bb8b92698e63c195da1d9<>res://.godot/imported/Idle-2.png.png-3e7d35ca8fc9124f6cc46b2ca0c8f404.ctex::
-Jump-1.png.png::CompressedTexture2D::4993119258850080142::1781138716::1781138717::1::::<><><>0<>0<>a2a23ecae69eb1650688d97965fbb6f2<>res://.godot/imported/Jump-1.png.png-af21c2e8a366868da5f87ad888d56c8a.ctex::
-Mindy Crenshaw-1.png.png::CompressedTexture2D::4289147734570275084::1781106023::1781132970::1::::<><><>0<>0<>1279da5fe1f5d1925ad2c92538a6ecd2<>res://.godot/imported/Mindy Crenshaw-1.png.png-77a479ccf5d0c2ca8f24dfd9acef3761.ctex::
-Walk-1.png.png::CompressedTexture2D::1957674729330145627::1781106353::1781132970::1::::<><><>0<>0<>724bc6f6f0592b3f6da9da38b962dee4<>res://.godot/imported/Walk-1.png.png-402b7981c3288dffd8b7cb9a9939f32f.ctex::
-Walk-2.png.png::CompressedTexture2D::8092046007278137040::1781106359::1781132970::1::::<><><>0<>0<>b0a6722c56d7d8e783f452a069b47947<>res://.godot/imported/Walk-2.png.png-c8c2e244b57492e1776d5f9c97dba564.ctex::
-Walk-3.png.png::CompressedTexture2D::7526889234463381588::1781106362::1781132970::1::::<><><>0<>0<>bc46e5201f6eec14022cb33b7a1f393a<>res://.godot/imported/Walk-3.png.png-4f635ce5b7dd93b6a4f09bd117ade98c.ctex::
-::res://scenes/::1781138456
-killzone.tscn::PackedScene::3645179080470679506::1781138181::0::1::::<><><>0<>0<><>::uid://bk5uj31u83bq6::::res://scripts/killzone.gd
-level.tscn::PackedScene::2996397548118120402::1781138456::0::1::::<><><>0<>0<><>::uid://c0vjtqbqpbsxa::::res://assets/kenney_voxel-pack/Spritesheets/spritesheet_tiles.png<>uid://crttcy3ej7k6w::::res://assets/kenney_voxel-pack/Spritesheets/spritesheet_items.png<>uid://cxeoy3txfdwge::::res://scenes/player.tscn<>uid://br60tjk74x371::::res://scenes/killzone.tscn
-player.tscn::PackedScene::6396336680086561968::1781137096::0::1::::<><><>0<>0<><>::uid://dykbbw4d0ah6o::::res://scripts/player.gd<>uid://25ku78u54xdr::::res://assets/Personagens/Walk-1.png.png<>uid://dnj32yxrqhpsy::::res://assets/Personagens/Walk-2.png.png<>uid://dfic1bq3qo4hc::::res://assets/Personagens/Walk-3.png.png
-::res://scripts/::1781138181
-killzone.gd::GDScript::3151472376468320179::1781138181::0::1::::<>Area2D<><>0<>0<><>::
-player.gd::GDScript::8864501779202104568::1781138077::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://::1782312438
+::res://assets/::1782304948
+::res://assets/kenney_voxel-pack/::1782304948
+::res://assets/kenney_voxel-pack/Spritesheets/::1782304948
+spritesheet_characters.xml::TextFile::-1::1781132746::0::1::::<><><>0<>0<><>::
+spritesheet_items.png::CompressedTexture2D::6006433385020227180::1781132746::1781132788::1::::<><><>0<>0<>9900424d7a536eccb062c9aa2e0d67cb<>res://.godot/imported/spritesheet_items.png-9ce0a794b9f083536cf5779b54f9bf0b.ctex::
+spritesheet_items.xml::TextFile::-1::1781132746::0::1::::<><><>0<>0<><>::
+spritesheet_particles.png::CompressedTexture2D::7522834571753384128::1781132746::1781132788::1::::<><><>0<>0<>442766d66fa3bc0b0d92e9cf7eeb7eb4<>res://.godot/imported/spritesheet_particles.png-23b4b1f774cf5183935acb2015e35dc1.ctex::
+spritesheet_particles.xml::TextFile::-1::1781132746::0::1::::<><><>0<>0<><>::
+spritesheet_tiles.png::CompressedTexture2D::6571495616856837646::1781132746::1781132788::1::::<><><>0<>0<>f54c1af08f65eab28c37ecd83e3db571<>res://.godot/imported/spritesheet_tiles.png-52024c1b276a1b8b0abc07bebdd6ccc6.ctex::
+spritesheet_tiles.xml::TextFile::-1::1781132746::0::1::::<><><>0<>0<><>::
+::res://assets/kenney_voxel-pack/Vector/::1782304948
+vector_characters.svg::CompressedTexture2D::1812026939863225180::1781132746::1781132788::1::::<><><>0<>0<>8cc4fa0076cd38b9a70493a4c6fbeead<>res://.godot/imported/vector_characters.svg-1abf497ed615fab36e814d8f34cabb2b.ctex::
+vector_other.svg::CompressedTexture2D::9194852061025257208::1781132746::1781132788::1::::<><><>0<>0<>28b3794830ee7b96b61ed876466c2c47<>res://.godot/imported/vector_other.svg-fb87a7bc51933c7ad4029a1953108894.ctex::
+vector_tiles_items.svg::CompressedTexture2D::1307672893211383507::1781132746::1781132788::1::::<><><>0<>0<>998cbd5c7696bc990388d7322b1b2629<>res://.godot/imported/vector_tiles_items.svg-62cc59155a08c4139e4a8a39255e31d9.ctex::
+::res://assets/Outros/::1782309636
+fundo1.png::CompressedTexture2D::8640511083993959377::1782309558::1782324106::0::::<><><>0<>0<>d3742d26b2e95a60f2d2ab56003dd288<>::
+fundos.jpg::CompressedTexture2D::3473931184181112775::1782309630::1782309636::1::::<><><>0<>0<>1aaa2b25eccdb410250d03c576114168<>res://.godot/imported/fundos.jpg-dd46a79234e93c748dbf45288b6d63a9.ctex::
+gameover.png::CompressedTexture2D::6791378479081309494::1782323668::1782324106::1::::<><><>0<>0<>5130bbbc405d1becab17c037e5fa6718<>res://.godot/imported/gameover.png-9a142bd6da382dcd92e393600418e758.ctex::
+off.png::CompressedTexture2D::9172982513410123649::1782319116::1782321400::1::::<><><>0<>0<>457f617342f2c00553de0aab66ec90a3<>res://.godot/imported/off.png-9c7598a8ce45814e13443869764d6ef6.ctex::
+on.png::CompressedTexture2D::7948727974163006405::1782319116::1782321400::1::::<><><>0<>0<>dc218912a759ebf9ab5510fcf9b7f333<>res://.godot/imported/on.png-9b0c507e1bc57d9f4715f3a674b45f9b.ctex::
+powerUP-removebg-preview-1.png.png::CompressedTexture2D::5920848900757155093::1782229220::1782229338::1::::<><><>0<>0<>16e7bb37db3d9a3d09344ad56d07f2ea<>res://.godot/imported/powerUP-removebg-preview-1.png.png-630f128600e91408f50728211d3d6d25.ctex::
+powerUP-removebg-preview-2.png.png::CompressedTexture2D::3198415786873413825::1782229228::1782229338::1::::<><><>0<>0<>3318a42d1e4ed864e853fb5321694559<>res://.godot/imported/powerUP-removebg-preview-2.png.png-404fe302e44d722be054f00446258d41.ctex::
+powerUP-removebg-preview-3.png.png::CompressedTexture2D::4232479977716566863::1782229232::1782229338::1::::<><><>0<>0<>39b8592f8ebbd7c712c2b181190eb8fc<>res://.godot/imported/powerUP-removebg-preview-3.png.png-4be7b3eb4c0c01c61db474de5f49041b.ctex::
+powerUP-removebg-preview-4.png.png::CompressedTexture2D::8770948934742217600::1782229240::1782229338::1::::<><><>0<>0<>016d8550c13db7fc6565496fd46b9733<>res://.godot/imported/powerUP-removebg-preview-4.png.png-75fbc7085211f3ef9689a99a69756a52.ctex::
+VIDA-removebg-preview-1.png.png::CompressedTexture2D::4133891544966607209::1782232508::1782304982::1::::<><><>0<>0<>bf1c829ad30f715a1ecf569c486f8676<>res://.godot/imported/VIDA-removebg-preview-1.png.png-64052657d9663d8ddacf901d03566236.ctex::
+VIDA-removebg-preview-2.png.png::CompressedTexture2D::8068894638042121234::1782232512::1782304982::1::::<><><>0<>0<>b9daeb4a204c3ff19bdaab8638e3f397<>res://.godot/imported/VIDA-removebg-preview-2.png.png-0d87e6ddde85e7b808761f0800e4c895.ctex::
+VIDA-removebg-preview-3.png.png::CompressedTexture2D::5186248046557327373::1782232516::1782304982::1::::<><><>0<>0<>c7d683bc5636cf461d7a21f5a9eed8e5<>res://.godot/imported/VIDA-removebg-preview-3.png.png-2763c7ca2bbf20e94641c2ab963a8f73.ctex::
+VIDA-removebg-preview-4.png.png::CompressedTexture2D::3192796697224439552::1782232520::1782304982::1::::<><><>0<>0<>1cadb6c380ffea56c3fc42636828cbd8<>res://.godot/imported/VIDA-removebg-preview-4.png.png-66818758a4dc3ec9bf92049d09a34bcb.ctex::
+::res://assets/Personagens/::1782304948
+Eric Blonowitz-1.png.png::CompressedTexture2D::122472862963055237::1782218220::1782218250::1::::<><><>0<>0<>7d67834acc44d66700b2a8707c6a38f3<>res://.godot/imported/Eric Blonowitz-1.png.png-6002c3ba9b7f47ffac5f6fc4ed8b8b18.ctex::
+Eric Blonowitz-2.png.png::CompressedTexture2D::6644283540117409661::1782218224::1782218250::1::::<><><>0<>0<>b56512f76329e31eb7c90eaf1a6953f0<>res://.godot/imported/Eric Blonowitz-2.png.png-578b9ffd34d08428946791a0f52d0f57.ctex::
+Eric Blonowitz-3.png.png::CompressedTexture2D::4664436166489309096::1782218226::1782218250::1::::<><><>0<>0<>4eaf0e8d61b43fe58ff241baca4c92d2<>res://.godot/imported/Eric Blonowitz-3.png.png-56a429515d33da62785f805c06fc9118.ctex::
+Idle-1.png.png::CompressedTexture2D::879213573358423390::1781138658::1781138658::1::::<><><>0<>0<>8c39df77cce76117966bbbe20f1a0178<>res://.godot/imported/Idle-1.png.png-8bed4b92a841d79d3ec5bbdddc94c91d.ctex::
+Idle-2.png.png::CompressedTexture2D::9143634642950745797::1781138646::1781138658::1::::<><><>0<>0<>3b034cdcc38bb8b92698e63c195da1d9<>res://.godot/imported/Idle-2.png.png-3e7d35ca8fc9124f6cc46b2ca0c8f404.ctex::
+Jump-1.png.png::CompressedTexture2D::4993119258850080142::1781138718::1781138718::1::::<><><>0<>0<>a2a23ecae69eb1650688d97965fbb6f2<>res://.godot/imported/Jump-1.png.png-af21c2e8a366868da5f87ad888d56c8a.ctex::
+Megan Parker-1.png.png::CompressedTexture2D::6730982207011254966::1782216170::1782216208::1::::<><><>0<>0<>8cfaf7d8a0295f270e11cc8e7933c15d<>res://.godot/imported/Megan Parker-1.png.png-ffd5170cd04b5cddf93e48a764cafa39.ctex::
+Megan Parker-2.png.png::CompressedTexture2D::3518387545740497267::1782216180::1782216208::1::::<><><>0<>0<>52f893e99d65de109d6ed256389b950e<>res://.godot/imported/Megan Parker-2.png.png-ae773de1102550a347a482314ff2e346.ctex::
+Megan Parker-3.png.png::CompressedTexture2D::5872074935204790155::1782216188::1782216208::1::::<><><>0<>0<>e48c78611a0f01055271483efc9a7c65<>res://.godot/imported/Megan Parker-3.png.png-3a3b485f11135a80a7a813258d70490b.ctex::
+Mindy Crenshaw-1.png.png::CompressedTexture2D::4289147734570275084::1781106024::1781132972::1::::<><><>0<>0<>1279da5fe1f5d1925ad2c92538a6ecd2<>res://.godot/imported/Mindy Crenshaw-1.png.png-77a479ccf5d0c2ca8f24dfd9acef3761.ctex::
+Steve Doido-1.png.png::CompressedTexture2D::4748303866273891102::1782217052::1782217082::1::::<><><>0<>0<>0b883a24af1c41b7dc47cc26c46c3fc2<>res://.godot/imported/Steve Doido-1.png.png-b311f051929c78017c95f9c8b931add4.ctex::
+Steve Doido-2.png.png::CompressedTexture2D::3804039224640550847::1782217056::1782217082::1::::<><><>0<>0<>6efde3654f8b600781699a34c7137389<>res://.godot/imported/Steve Doido-2.png.png-442bdbbc460ded9a610f0f5c2e3733c8.ctex::
+Steve Doido-3.png.png::CompressedTexture2D::8750107083598277765::1782217062::1782217082::1::::<><><>0<>0<>df41e794854af5a4744b78b958b45156<>res://.godot/imported/Steve Doido-3.png.png-983bb6c6ad3d1d62b711f8ebffb407ce.ctex::
+Walk-1.png.png::CompressedTexture2D::1957674729330145627::1781106354::1781132972::1::::<><><>0<>0<>724bc6f6f0592b3f6da9da38b962dee4<>res://.godot/imported/Walk-1.png.png-402b7981c3288dffd8b7cb9a9939f32f.ctex::
+Walk-2.png.png::CompressedTexture2D::8092046007278137040::1781106360::1781132972::1::::<><><>0<>0<>b0a6722c56d7d8e783f452a069b47947<>res://.godot/imported/Walk-2.png.png-c8c2e244b57492e1776d5f9c97dba564.ctex::
+Walk-3.png.png::CompressedTexture2D::7526889234463381588::1781106364::1781132972::1::::<><><>0<>0<>bc46e5201f6eec14022cb33b7a1f393a<>res://.godot/imported/Walk-3.png.png-4f635ce5b7dd93b6a4f09bd117ade98c.ctex::
+::res://scenes/::1782311320
+eric_blonowitz.tscn::PackedScene::8326219021194814193::1782325162::0::1::::<><><>0<>0<><>::uid://dw10bbb333cw8::::res://scripts/eric_blonowitz.gd<>uid://b0ld0lydif7b::::res://assets/Personagens/Eric Blonowitz-1.png.png<>uid://c1wsm5kwggl5f::::res://assets/Personagens/Eric Blonowitz-2.png.png<>uid://b7pqt188lcs7a::::res://assets/Personagens/Eric Blonowitz-3.png.png<>uid://br60tjk74x371::::res://scenes/killzone.tscn
+game_over.tscn::PackedScene::8782782819231512700::1782326194::0::1::::<><><>0<>0<><>::uid://co4awxnjfookp::::res://scripts/game_over.gd<>uid://c302anc3gqkug::::res://assets/Outros/gameover.png
+hud.tscn::PackedScene::6914056635408105029::1782323094::0::1::::<><><>0<>0<><>::uid://by5qub1tsy8xx::::res://assets/Outros/VIDA-removebg-preview-1.png.png<>uid://b3cms156wqo56::::res://scripts/hud.gd
+killzone.tscn::PackedScene::3645179080470679506::1782311318::0::1::::<><><>0<>0<><>::uid://bk5uj31u83bq6::::res://scripts/killzone.gd
+level.tscn::PackedScene::2996397548118120402::1782324574::0::1::::<><><>0<>0<><>::uid://c0vjtqbqpbsxa::::res://assets/kenney_voxel-pack/Spritesheets/spritesheet_tiles.png<>uid://crttcy3ej7k6w::::res://assets/kenney_voxel-pack/Spritesheets/spritesheet_items.png<>uid://cxeoy3txfdwge::::res://scenes/player.tscn<>uid://br60tjk74x371::::res://scenes/killzone.tscn<>uid://dqvju1dam5ic4::::res://scenes/eric_blonowitz.tscn<>uid://d15mlkvwvmcfh::::res://scenes/megan_parker.tscn<>uid://dvkb2u1bu1wnx::::res://scenes/steve_doido.tscn<>uid://c5rhrdblbey18::::res://scenes/hud.tscn<>uid://ddo8nceglr8sq::::res://scenes/pause_menu.tscn<>uid://di8ldk2sxnoyf::::res://scenes/node_2d.tscn<>uid://b7hi7jppt1oam::::res://scripts/game_manager.gd
+megan_parker.tscn::PackedScene::9046852124638600553::1782325150::0::1::::<><><>0<>0<><>::uid://detq77joyqkhv::::res://scripts/megan_parker.gd<>uid://c25sj8lk7xryk::::res://assets/Personagens/Megan Parker-1.png.png<>uid://bqellgesyawkh::::res://assets/Personagens/Megan Parker-2.png.png<>uid://cpwqhl87u32fv::::res://assets/Personagens/Megan Parker-3.png.png<>uid://br60tjk74x371::::res://scenes/killzone.tscn
+menu_inicial.tscn::PackedScene::3647209887585005154::1782325870::0::1::::<><><>0<>0<><>::uid://b53lqftbmc8bq::::res://scripts/menu_inicial.gd<>uid://bpq2ey0phv1mp::::res://assets/Outros/fundos.jpg
+node_2d.tscn::PackedScene::7789571078162002629::1782322020::0::1::::<><><>0<>0<><>::uid://6akomvf6tmu0::::res://scripts/node_2d.gd<>uid://cqmdrs5tiqgin::::res://assets/Outros/powerUP-removebg-preview-1.png.png<>uid://bltlo8p44skcv::::res://assets/Outros/powerUP-removebg-preview-2.png.png<>uid://b1kild35xopk6::::res://assets/Outros/powerUP-removebg-preview-3.png.png<>uid://dw7yiod44yngq::::res://assets/Outros/powerUP-removebg-preview-4.png.png
+pause_menu.tscn::PackedScene::7400756858146231280::1782322028::0::1::::<><><>0<>0<><>::uid://1mxty6kc6u1m::::res://scripts/pause_menu.gd
+player.tscn::PackedScene::6396336680086561968::1782326302::0::1::::<><><>0<>0<><>::uid://dykbbw4d0ah6o::::res://scripts/player.gd<>uid://25ku78u54xdr::::res://assets/Personagens/Walk-1.png.png<>uid://dnj32yxrqhpsy::::res://assets/Personagens/Walk-2.png.png<>uid://mr5rwcwatc5c::::res://assets/Personagens/Idle-1.png.png<>uid://d3jildvl0tvbh::::res://assets/Personagens/Idle-2.png.png<>uid://dfic1bq3qo4hc::::res://assets/Personagens/Walk-3.png.png<>uid://cdex7eccp1h8q::::res://assets/Personagens/Jump-1.png.png
+steve_doido.tscn::PackedScene::8653981569151907289::1782325152::0::1::::<><><>0<>0<><>::uid://sm4wjfsrdl4s::::res://scripts/steve_doido.gd<>uid://b8wd4u2qxlg5c::::res://assets/Personagens/Steve Doido-1.png.png<>uid://bugx78u2w17i6::::res://assets/Personagens/Steve Doido-2.png.png<>uid://dwwu8q7wx26pd::::res://assets/Personagens/Steve Doido-3.png.png<>uid://br60tjk74x371::::res://scenes/killzone.tscn
+::res://scripts/::1782305910
+eric_blonowitz.gd::GDScript::8758610198713503733::1782305910::0::1::::<>CharacterBody2D<><>0<>0<><>::
+game_manager.gd::GDScript::4647457702325821540::1782322218::0::1::::<>Node2D<><>0<>0<><>::
+game_over.gd::GDScript::5815392649187974715::1782326304::0::1::::<>Control<><>0<>0<><>::
+hud.gd::GDScript::4356599222659392915::1782322558::0::1::::<>CanvasLayer<><>0<>0<><>::
+killzone.gd::GDScript::3151472376468320179::1781138182::0::1::::<>Area2D<><>0<>0<><>::
+megan_parker.gd::GDScript::7480270915567041579::1782229844::0::1::::<>CharacterBody2D<><>0<>0<><>::
+menu_inicial.gd::GDScript::4550585321600278630::1782325870::0::1::::<>Control<><>0<>0<><>::
+node_2d.gd::GDScript::2176486986811796441::1782307956::0::1::::<>Area2D<><>0<>0<><>::
+pause_menu.gd::GDScript::1851114197462990696::1782324574::0::1::::<>CanvasLayer<><>0<>0<><>::
+player.gd::GDScript::8864501779202104568::1782324122::0::1::::<>CharacterBody2D<><>0<>0<><>::
+steve_doido.gd::GDScript::1289972280064295744::1782220222::0::1::::<>CharacterBody2D<><>0<>0<><>::

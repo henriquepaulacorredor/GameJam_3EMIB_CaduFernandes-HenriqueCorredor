@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://br70aqfv8kqgw"]
+
+[ext_resource type="Script" uid="uid://b53lqftbmc8bq" path="res://scripts/menu_inicial.gd" id="1_1lqws"]
+[ext_resource type="Texture2D" uid="uid://bpq2ey0phv1mp" path="res://assets/Outros/fundos.jpg" id="1_40mju"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eg8ak"]
+bg_color = Color(0.05133339, 0, 0.44, 1)
+
+[node name="MenuInicial" type="Control" unique_id=622543391]
+layout_mode = 3
+anchor_right = 0.96800005
+anchor_bottom = 0.952
+offset_right = -130.2472
+offset_bottom = -62.895996
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1lqws")
+
+[node name="GameBackground" type="TextureRect" parent="." unique_id=1864738645]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 163.55554
+offset_bottom = 92.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_40mju")
+
+[node name="TituloJogoLabel" type="Label" parent="." unique_id=1869658527]
+modulate = Color(0.0012169147, 0.0014723451, 0.0019164837, 1)
+layout_mode = 0
+offset_left = 364.0
+offset_top = 232.0
+offset_right = 783.0
+offset_bottom = 326.0
+text = "Drake & Josh:  A saga do tronco infinito"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="JogarButton" type="Button" parent="." unique_id=89687320]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 373.0
+offset_right = 615.0
+offset_bottom = 404.0
+theme_override_colors/font_color = Color(0.88711476, 0.8716624, 0.859527, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_eg8ak")
+text = "JOGAR
+"
+
+[connection signal="pressed" from="JogarButton" to="." method="_on_jogar_button_pressed"]

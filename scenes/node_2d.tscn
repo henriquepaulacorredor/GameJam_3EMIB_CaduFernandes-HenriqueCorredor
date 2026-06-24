@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://di8ldk2sxnoyf"]
+
+[ext_resource type="Script" uid="uid://6akomvf6tmu0" path="res://scripts/node_2d.gd" id="1_04qyp"]
+[ext_resource type="Texture2D" uid="uid://cqmdrs5tiqgin" path="res://assets/Outros/powerUP-removebg-preview-1.png.png" id="2_j7wrs"]
+[ext_resource type="Texture2D" uid="uid://bltlo8p44skcv" path="res://assets/Outros/powerUP-removebg-preview-2.png.png" id="3_fws66"]
+[ext_resource type="Texture2D" uid="uid://b1kild35xopk6" path="res://assets/Outros/powerUP-removebg-preview-3.png.png" id="4_hh0fu"]
+[ext_resource type="Texture2D" uid="uid://dw7yiod44yngq" path="res://assets/Outros/powerUP-removebg-preview-4.png.png" id="5_3m5ht"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dubn7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_j7wrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fws66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hh0fu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3m5ht")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_04qyp"]
+radius = 30.016663
+
+[node name="Node2D" type="Area2D" unique_id=604343289]
+script = ExtResource("1_04qyp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=972986728]
+position = Vector2(-215.5, 16.68135)
+scale = Vector2(0.13799998, 0.14127456)
+sprite_frames = SubResource("SpriteFrames_dubn7")
+frame_progress = 0.3992051
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=207279663]
+position = Vector2(-216, 16)
+shape = SubResource("CircleShape2D_04qyp")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=382804344]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

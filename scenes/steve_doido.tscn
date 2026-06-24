@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dvkb2u1bu1wnx"]
+
+[ext_resource type="Script" uid="uid://sm4wjfsrdl4s" path="res://scripts/steve_doido.gd" id="1_67vd3"]
+[ext_resource type="Texture2D" uid="uid://b8wd4u2qxlg5c" path="res://assets/Personagens/Steve Doido-1.png.png" id="2_k0cfv"]
+[ext_resource type="Texture2D" uid="uid://bugx78u2w17i6" path="res://assets/Personagens/Steve Doido-2.png.png" id="3_yvvvb"]
+[ext_resource type="Texture2D" uid="uid://dwwu8q7wx26pd" path="res://assets/Personagens/Steve Doido-3.png.png" id="4_0a1m5"]
+[ext_resource type="PackedScene" uid="uid://br60tjk74x371" path="res://scenes/killzone.tscn" id="5_k0cfv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tobod"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_k0cfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yvvvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0a1m5")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nqm1"]
+size = Vector2(44, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yvvvb"]
+size = Vector2(50, 73)
+
+[node name="steve_doido" type="CharacterBody2D" unique_id=1887388605]
+script = ExtResource("1_67vd3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1336145694]
+sprite_frames = SubResource("SpriteFrames_tobod")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2091253175]
+position = Vector2(-2, 7)
+shape = SubResource("RectangleShape2D_3nqm1")
+
+[node name="FloorLeft" type="RayCast2D" parent="." unique_id=363188675]
+target_position = Vector2(-26, 47)
+
+[node name="FloorRight" type="RayCast2D" parent="." unique_id=1536376953]
+target_position = Vector2(21, 47)
+
+[node name="Killzone" parent="." unique_id=1706848537 instance=ExtResource("5_k0cfv")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=868146513]
+position = Vector2(-2, 7.5)
+shape = SubResource("RectangleShape2D_yvvvb")

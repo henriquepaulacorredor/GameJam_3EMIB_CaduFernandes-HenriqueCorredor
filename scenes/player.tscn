@@ -45,18 +45,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1jxqw"]
-size = Vector2(76, 89)
+size = Vector2(50, 83)
 
 [node name="Player" type="CharacterBody2D" unique_id=1724235791]
 script = ExtResource("1_hqtel")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1525272906]
 sprite_frames = SubResource("SpriteFrames_2hs0m")
-animation = &"idle"
+animation = &"walk"
+frame_progress = 0.48631006
 
 [node name="Camera2D" type="Camera2D" parent="AnimatedSprite2D" unique_id=137637086]
 zoom = Vector2(0.95, 0.95)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1891044449]
-position = Vector2(0, 1)
+position = Vector2(-3, 3.5)
 shape = SubResource("RectangleShape2D_1jxqw")

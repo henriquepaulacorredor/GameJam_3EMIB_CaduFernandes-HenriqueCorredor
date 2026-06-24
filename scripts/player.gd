@@ -3,6 +3,8 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -900.0
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var hud: CanvasLayer = $"../HUD"
+@onready var posicao_inicial: Marker2D = $"../PosicaoInicial"
 
 func _physics_process(delta: float) -> void:
 	
@@ -40,8 +42,17 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func die():
-# get_tree() — acessa o SceneTree, que é o gerenciador geral do jogo.
-# É por ele que você controla cenas, pausa o jogo, fecha o jogo, etc.
-# .reload_current_scene() — reinicia a cena atual do zero, como se
-# você tivesse fechado e reaberto ela.
-	get_tree().reload_current_scene()
+	tomar_dano(1)
+# função que recebe a quantidade de dano via parâmetro e aplica à vidas
+func tomar_dano(dano:int) -> void:
+	GameManager.vidas -= dano
+	if GameManager.vidas <= 0:
+		# ao invés de printar "Game Over" no Output,
+		# levaremos para a cena de Game Over
+		get_tree().change_scene_to_file("res://scenes/game_over.tscn")
+	else:
+		respawn()
+	hud.atualizar_vidas()
+	
+func respawn() -> void:
+	position = posicao_inicial.position

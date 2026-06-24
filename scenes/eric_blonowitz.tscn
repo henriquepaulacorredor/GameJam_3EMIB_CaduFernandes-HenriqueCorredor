@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://dqvju1dam5ic4"]
+
+[ext_resource type="Script" uid="uid://dw10bbb333cw8" path="res://scripts/eric_blonowitz.gd" id="1_1a0ec"]
+[ext_resource type="Texture2D" uid="uid://b0ld0lydif7b" path="res://assets/Personagens/Eric Blonowitz-1.png.png" id="1_h4xug"]
+[ext_resource type="Texture2D" uid="uid://c1wsm5kwggl5f" path="res://assets/Personagens/Eric Blonowitz-2.png.png" id="2_1a0ec"]
+[ext_resource type="Texture2D" uid="uid://b7pqt188lcs7a" path="res://assets/Personagens/Eric Blonowitz-3.png.png" id="3_a8okc"]
+[ext_resource type="PackedScene" uid="uid://br60tjk74x371" path="res://scenes/killzone.tscn" id="5_a8okc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yhf4v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_h4xug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1a0ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a8okc")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ii6s3"]
+size = Vector2(44, 74)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhf4v"]
+size = Vector2(48, 77)
+
+[node name="EricBlonowitz" type="CharacterBody2D" unique_id=292407703]
+script = ExtResource("1_1a0ec")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=285719011]
+sprite_frames = SubResource("SpriteFrames_yhf4v")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=965886829]
+position = Vector2(-2, 5)
+shape = SubResource("RectangleShape2D_ii6s3")
+
+[node name="FloorLeft" type="RayCast2D" parent="." unique_id=1500435740]
+target_position = Vector2(-27, 47)
+
+[node name="FloorRight" type="RayCast2D" parent="." unique_id=2088458268]
+target_position = Vector2(21, 46)
+
+[node name="Killzone" parent="." unique_id=1706848537 instance=ExtResource("5_a8okc")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=675724450]
+position = Vector2(-2, 4.5)
+shape = SubResource("RectangleShape2D_yhf4v")

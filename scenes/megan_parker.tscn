@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://d15mlkvwvmcfh"]
+
+[ext_resource type="Script" uid="uid://detq77joyqkhv" path="res://scripts/megan_parker.gd" id="1_tuqhb"]
+[ext_resource type="Texture2D" uid="uid://c25sj8lk7xryk" path="res://assets/Personagens/Megan Parker-1.png.png" id="1_w5q3r"]
+[ext_resource type="Texture2D" uid="uid://bqellgesyawkh" path="res://assets/Personagens/Megan Parker-2.png.png" id="2_3qijy"]
+[ext_resource type="Texture2D" uid="uid://cpwqhl87u32fv" path="res://assets/Personagens/Megan Parker-3.png.png" id="3_tuqhb"]
+[ext_resource type="PackedScene" uid="uid://br60tjk74x371" path="res://scenes/killzone.tscn" id="4_3qijy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hjjlu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w5q3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3qijy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tuqhb")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_74l57"]
+size = Vector2(44, 69)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tuqhb"]
+size = Vector2(48, 71)
+
+[node name="MeganParker" type="CharacterBody2D" unique_id=470698621]
+script = ExtResource("1_tuqhb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=985077303]
+sprite_frames = SubResource("SpriteFrames_hjjlu")
+animation = &"walk"
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1082373201]
+position = Vector2(-2, 6.5)
+shape = SubResource("RectangleShape2D_74l57")
+
+[node name="FloorLeft" type="RayCast2D" parent="." unique_id=1404115002]
+target_position = Vector2(-26, 45)
+
+[node name="FloorRight" type="RayCast2D" parent="." unique_id=1208170151]
+target_position = Vector2(22, 46)
+
+[node name="Killzone" parent="." unique_id=1706848537 instance=ExtResource("4_3qijy")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=2004262320]
+position = Vector2(-2, 6.5)
+shape = SubResource("RectangleShape2D_tuqhb")

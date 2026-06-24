@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c5rhrdblbey18"]
+
+[ext_resource type="Texture2D" uid="uid://by5qub1tsy8xx" path="res://assets/Outros/VIDA-removebg-preview-1.png.png" id="1_ahhtf"]
+[ext_resource type="Script" uid="uid://b3cms156wqo56" path="res://scripts/hud.gd" id="1_oo0fn"]
+
+[sub_resource type="SystemFont" id="SystemFont_oo0fn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ysmq"]
+font = SubResource("SystemFont_oo0fn")
+
+[node name="HUD" type="CanvasLayer" unique_id=1470819927]
+script = ExtResource("1_oo0fn")
+
+[node name="Control" type="Control" parent="." unique_id=409186404]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthLabel" type="Label" parent="Control" unique_id=1113271839]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 15.0
+offset_right = 68.0
+offset_bottom = 38.0
+label_settings = SubResource("LabelSettings_5ysmq")
+
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1279651827]
+visible = false
+layout_mode = 0
+offset_left = 5.0
+offset_top = -44.0
+offset_right = 148.10281
+offset_bottom = 88.0
+texture = ExtResource("1_ahhtf")
+expand_mode = 1
